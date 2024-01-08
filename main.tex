@@ -1,4 +1,7 @@
 \usepackage{lipsum}
+\include{exampledef}
+
+\newcommand{\keyword}[1]{\textcolor{blue}{#1}}
 
 \begin{document}
 
@@ -20,8 +23,8 @@
 %----------------------------------------------------------------------------------------
 \newpage
 \chapter{First steps} \label{ch:first}
-\input{sections/part1/WhyPython}
-\input{sections/part1/KnowYourPlace}
+\input{sections/part1/Introduction}
+\input{sections/part1/FirstSteps}
 
 %----------------------------------------------------------------------------------------
 \newpage
@@ -38,9 +41,24 @@
 \newpage
 \chapter{Functional Programming} \label{ch:Functional}
 \input{sections/part2/Functions}
-\newpage
 \input{sections/part2/Modules}
 \chapter{Object Orientated Programming} 
 \label{ch:OOP}
 
+% =======================================================================================
+%                                   PART III
+% =======================================================================================
+\part{Working with Data} 
+\label{ch:Data}
+\chapter{Managing Data} \label{ch:ManagingData}
+\input{sections/part3/ManagingData}
+\chapter{Visualising Data} \label{ch:Graphs}
+\input{sections/part3/VisualisingData}
+
+\part{Machine Learning Projects} 
+\label{ch:MLProject}
+\chapter{Decision trees}\label{ch:DecisionTrees}
+\input{sections/part4/DecisionTrees}
+\chapter{Image Classification}\label{ch:ImageClass}
+\input{sections/part4/ImageClassification}
 \end{document}

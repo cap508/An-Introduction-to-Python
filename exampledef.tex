@@ -1,0 +1,14 @@
+\usepackage{tcolorbox}
+
+\newcounter{example}
+\setcounter{example}{1}
+
+\definecolor{exHead}{RGB}{160,160,160}
+\definecolor{exMain}{RGB}{200,200,200}
+
+\newenvironment{example}[1][]{
+\begin{tcolorbox}[colback=exMain, colframe=exHead, title= \textsf{\large{\textbf{Example~\theexample. #1}}}]
+\refstepcounter{example}
+   \rmfamily
+   \par\medskip}
+{  \medskip\end{tcolorbox}}
